@@ -3,11 +3,13 @@
  */
 package com.flipkart.business;
 
+import com.flipkart.demoabstract.DemoAbstract;
+
 /**
  * @author rudra.tiwari
  *
  */
-public class CalculatorBusiness {
+public class CalculatorBusiness extends DemoAbstract{
 
 	// Business Logic methods here
 
@@ -33,6 +35,12 @@ public class CalculatorBusiness {
 
 		System.out.println("Divide by 0 error");
 		return 0;
+	}
+
+	@Override
+	public String testHello() {
+		// TODO Auto-generated method stub
+		return "Hello from Base Class";
 	}
 
 }
