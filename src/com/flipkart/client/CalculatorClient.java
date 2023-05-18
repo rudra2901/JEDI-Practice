@@ -4,7 +4,6 @@
 package com.flipkart.client;
 
 import com.flipkart.business.*;
-import com.flipkart.demoabstract.*;
 
 /**
  * @author rudra.tiwari
