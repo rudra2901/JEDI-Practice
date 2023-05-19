@@ -19,7 +19,7 @@ public class ArrayListDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		List list = new ArrayList();
+		List<String> list = new ArrayList<String>();
 		
 		System.out.println("Size of collection before allocation : " + list.size());
 		
@@ -27,7 +27,6 @@ public class ArrayListDemo {
 		list.add("Mumbai");
 		list.add("Delhi");
 		list.add("Bhopal");
-		list.add(2901);
 		
 		System.out.println("Size of collection after allocation : " + list.size());
 		
@@ -35,10 +34,17 @@ public class ArrayListDemo {
 		System.out.println("Size of collection after removal : " + list.size());
 		
 		
-//		Iterator<String> it = list.iterator();
-//		while(it.hasNext()) {
-//			String var = it.next();
-//		}
+		Iterator<String> it = list.iterator();
+		while(it.hasNext()) {
+			String var = it.next();
+			System.out.println(var);
+		}
+		
+		// New method
+		
+		for(String var: list) {
+			System.out.println(var);
+		}
 	}
 
 }
